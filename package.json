@@ -1,0 +1,17 @@
+{
+  "name": "login-form",
+  "private": true,
+  "scripts": {
+    "test": "mocha --require ./test-setup.js app.js",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report",
+    "playwright:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "mocha": "^11.7.5",
+    "typescript": "^5.8.2"
+  }
+}
