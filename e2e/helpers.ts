@@ -1,14 +1,5 @@
 import type { Locator, Page } from "@playwright/test";
 
-/** Main IMDb search field on the homepage (navbar). */
-export function imdbSearchInput(page: Page): Locator {
-    return page
-        .getByPlaceholder(/search/i)
-        .or(page.locator('input[name="q"]'))
-        .or(page.locator('[data-testid="suggestion-search"]'))
-        .first();
-}
-
 /**
  * Dismisses common consent banners (OneTrust / generic Accept) if shown.
  */
